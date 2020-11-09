@@ -36,7 +36,7 @@ def on_sticker_receive(update: Update, context: CallbackContext):
         request_kwargs['filename'] = update.message.sticker.file_id + '.tgs'
     else:
         request_kwargs['document'] = sticker.png_file
-        request_kwargs['filename'] = update.message.sticker.file_id + '.png'
+        request_kwargs['filename'] = 'Damien' + update.message.sticker.file_id + '.png'
 
     sent_message: Message = update.message.reply_document(**request_kwargs)
     sticker.close()
