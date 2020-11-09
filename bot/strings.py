@@ -218,4 +218,4 @@ class Strings:
 
     CLEANUP_WAIT = "Hold on, this operation might take some time..."
 
-    TO_FILE_MIME_TYPE = "By @DamienSoukara : {}"
+    TO_FILE_MIME_TYPE = "©️ @DamienSoukara : {}"
