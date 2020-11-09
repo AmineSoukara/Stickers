@@ -1,0 +1,8 @@
+python-telegram-bot==12.8
+sqlalchemy
+pillow
+toml
+emoji
+alembic
+pyrogram==0.17.1
+tgcrypto==1.2.1

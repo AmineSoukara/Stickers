@@ -1,0 +1,17 @@
+*.txt
+!requirements.txt
+*.pyc
+*.sqlite
+config.ini
+config.toml
+*.db
+*.log
+*.log.*
+*.png
+*.webp
+.idea/
+*.zip
+venv/
+data.pickle
+*.session
+*.session-journal
