@@ -33,7 +33,7 @@ def on_sticker_receive(update: Update, context: CallbackContext):
 
     if update.message.sticker.is_animated:
         request_kwargs['document'] = sticker.tgs_file
-        request_kwargs['filename'] = update.message.sticker.file_id + '.tgz'
+        request_kwargs['filename'] = update.message.sticker.file_id + '.json'
     else:
         request_kwargs['document'] = sticker.png_file
         request_kwargs['filename'] = '@DamienSouara-' + update.message.sticker.file_id + '.png'
