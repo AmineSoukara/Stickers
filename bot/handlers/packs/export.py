@@ -132,7 +132,7 @@ def on_sticker_receive(update: Update, context: CallbackContext):
             update.message.reply_document(
                 tmp_file,
                 filename='{}.zip'.format(sticker_set.name),
-                caption='<a href="{}">{}</a>'.format(
+                caption='<a href="{}">{}</a> \nConverted by @DamienSoukara'.format(
                     utils.name2link(sticker_set.name),
                     html_escape(sticker_set.title)
                 ),
