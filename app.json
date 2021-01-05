@@ -1,0 +1,19 @@
+{
+  "name": "Stickers",
+  "description": "Stickers Thief",
+  "keywords": [
+    "telegram",
+    "Stickers"
+  ],
+  "repository": "https://github.com/AmineSoukara/stickers",
+  "success_url": "https://github.com/AmineSoukara/stickers",
+  "website": "https://github.com/AmineSoukara/stickers",  
+  "addons": [],
+  "buildpacks": [],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }  
+}

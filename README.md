@@ -15,6 +15,10 @@ Features:
 
 ## Running the bot
 
+## Deploy :
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 #### Native
 
 1. install requirements with `pip3 install -r requirements.txt`

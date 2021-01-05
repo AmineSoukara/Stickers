@@ -33,10 +33,10 @@ def on_sticker_receive(update: Update, context: CallbackContext):
 
     if update.message.sticker.is_animated:
         request_kwargs['document'] = sticker.tgs_file
-        request_kwargs['filename'] = update.message.sticker.file_id + '.tgs'
+        request_kwargs['filename'] = update.message.sticker.file_id + '.json'
     else:
         request_kwargs['document'] = sticker.png_file
-        request_kwargs['filename'] = update.message.sticker.file_id + '.png'
+        request_kwargs['filename'] = '@DamienSouara-' + update.message.sticker.file_id + '.png'
 
     sent_message: Message = update.message.reply_document(**request_kwargs)
     sticker.close()
@@ -49,7 +49,7 @@ def on_sticker_receive(update: Update, context: CallbackContext):
         # - sent back as animated sticker: everything ok
         # - sent back as file: there's something wrong with the code/api, better to edit the document with its mimetype
         sent_message.edit_caption(
-            caption='{}\n<code>{}</code>'.format(
+            caption='{}\n{}'.format(
                 sent_message.caption,
                 Strings.TO_FILE_MIME_TYPE.format(sent_message.document.mime_type)
             ),

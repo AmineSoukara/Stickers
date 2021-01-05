@@ -1,0 +1,20 @@
+[telegram]
+token = "1414251617:AAEfk_Ksuq_1Hl3Yrs2AGugoPEkBa_QFbBo"
+workers = 1
+admins = [853393439]
+admins_only = false
+maintenance_mode = false
+persistent_temp_data = true
+
+[pyrogram]
+enabled = false
+api_id = 2059351
+api_hash = "055ad1774b838870be128567b7a4c04a"
+
+[sqlite]
+filename = "stickersbot.sqlite"
+
+[bot]
+sourcecode = "t.me/DamienSoukara"
+issues = "Github@AmineSoukara"
+channel = "DamienSoukara"
